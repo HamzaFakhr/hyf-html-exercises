@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Outfit', sans-serif;
+}
+ul {
+    list-style: none;
+}
+/* Styling the header */
+a {
+    text-decoration: none;
+}
+header {
+    display: flex;
+    width: 90%;
+    height: 7vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container , .nav-links , .right-nav {
+    display: flex;
+}
+
+.logo-container {
+    flex: 1;
+}
+.logo-container img {
+    width: 30%;
+}
+nav {
+    flex: 2;
+}
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-link {
+    color: rgb(39, 39, 39);
+    font-size: 16px;
+    text-decoration: none;
+}
+.right-nav {
+    padding-top: 10px;
+    margin: auto;
+    flex: 1;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.contact-button {
+    background: #0abf53;
+    color:whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 70vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.intro-video img {
+    height: 60vh;
+}
+.intro {
+    flex: 1;
+}
+.intro-text h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
+.intro-text p {
+    margin: 15px;
+    font-size: 20px;
+    color: #00112c;
+}
+.intro-button {
+    padding: 50px, 0px, 0px, 0px;
+}
+.green-button {
+    background: #0abf53;
+    color:whitesmoke;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    width: 220px;
+    height: 50px;
+    margin: 12px, 12px, 12px, 0px;
+    cursor: pointer;
+}
+.intro-video {
+    flex: 1;
+}
+
+/* Styling logos section */
+
+.companies-container {
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 90%;
+}
+/* .ccompanies-container img {
+
+} */
+
+
+/* Styling features section */
+
+.features {
+    background-color: rgb(243, 246, 249);
+    padding: 70px;
+    /* position: relative; */
+}
+.features-container {
+    display: flex;
+}
+
+.features-column {
+    text-align: center;
+    margin: 5px;
+    padding: 15px;
+}
+.features-column img {
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
+.features-column h2 {
+    margin-bottom: 10px;
+}
+.features-column p {
+    margin-bottom: 25px;
+}
+
+/* Styling another section */
+
+.payments {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin: auto;
+    /* position: absolute;
+    top: 100px; */
+}
+.payments-container {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.payments-text {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.payments-text h2 {
+    margin-bottom: 25px;
+}
+.payments-text p {
+    margin-bottom: 25px;
+}
+.payments-text a {
+    color: #0abf53;
+}
+
+.payments-columns {
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+}
+.payments-column {
+    align-items: center;
+    width: 85%;
+}
+.payments-column a {
+    color: #0abf53;
+
+}
+.payments-column img {
+    border-radius: 6px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+/* Styling the last section */
+.last-section {
+    background: #0abf53;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.last-section h2 {
+    color:seashell;
+    margin: 30px;
+}
+.last-section button {
+    background:rgb(1, 17, 44);
+    color:whitesmoke;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    width: 140px;
+    height: 50px;
+    cursor: pointer;
+    
+}
+
+/* Styling the footer */
+.footer-row {
+    height: 60%;
+    background:rgb(1, 17, 44);
+    color: #ffff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px;
+}
+.footer-column h5 {
+    color: red;
+    font-size: 20px;
+}
+.nav-footer-column {
+    list-style:none;
+}
+.nav-footer-column a {
+    color: seashell;
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation {
+        flex-direction: column;
+    }
+    .intro {
+        margin-top: 5vh;
+        text-align: center;
+    }
+    .intro-text h1 {
+        font-size: 25px;
+    }
+    .intro-text p {
+        font-size: 16px;
+    }
+    .intro-video img {
+        padding-top: 20px;
+    }
+    .companies-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .payments-column img {
+        width: 70%;
+        max-width: 360px;
+    }
+
+}
